@@ -1,0 +1,43 @@
+./pages/anchor_boxes.txt done
+./pages/bounding_box_predictions.txt done
+./pages/building_your_deep_neural_network_step_by_step.txt done
+./pages/convolutional_network_example.txt done
+./pages/fitting_batch_norm_into_a_neural_network.txt done
+./pages/glossary_deep_learning.txt done
+./pages/math_glossary.txt done
+./pages/migrate_dokuwiki_to_restructured_text.txt done
+./pages/multi-task_learning.txt done
+./pages/neural_networks_basics_summarized.txt done
+./pages/neural_networks_basics.txt done
+./pages/notation_deep_learning.txt done
+./pages/notation_for_this_course.txt done
+./pages/object_localization.txt done matrix
+./pages/planar_data_classification_with_one_hidden_layer_v5.txt done
+./pages/quizz_improving_deep_neural_networks.txt done
+./pages/setting_up_your_optimization_problem.txt done
+./pages/shallow_neural_networks.txt done
+./pages/softmax_regression.txt done
+./pages/transposition.txt done
+./pages/yolo_algorithm.txt done
+
+./docs/adam_optimization_algorithm.md
+./docs/addressing_data_mismatch.md
+./docs/avoidable_bias.md
+./docs/deep_learning_ai_course.md
+./docs/deep_neural_networks.md
+./docs/gradient_descent_with_momentum.md
+
+
+./docs/introduction_to_deep_learning.md
+./docs/neural_networks_and_deep_learning.md
+./docs/neural_networks_basics.md
+./docs/neural_networks_basics_summarized.md
+
+./docs/notation_for_this_course.md
+./docs/pooling_layers.md
+./docs/quizz_improving_deep_neural_networks.md
+./docs/setting_up_your_machine_learning_application.md
+./docs/shallow_neural_networks_summarized.md
+./docs/statistics_books_and_sites.md
+./docs/statistics.md
+./docs/why_ml_strategy.md

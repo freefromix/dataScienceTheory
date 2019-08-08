@@ -1,0 +1,69 @@
+site_name: Python to know
+nav:
+    - Home: index.md
+    - Basics:
+      - Strings: strings.md
+      - List_tuple_set_dictionary: list_tuple_set_dictionary.md
+      - Functions: functions.md
+      - Modules: modules.md
+      - Numbers: numbers.md
+      - Objects: objects.md
+
+    - Python cheat sheet:
+      - 00 Python Cheatsheet: 00_Python_Cheatsheet.md
+      - 01 Python Basics: 01_Python_Basics.md
+      - 02 Flow Control: 02_Flow_Control.md
+      - 03 Functions: 03_Functions.md
+      - 04 Exception Handling: 04_Exception_Handling.md
+      - 05 Lists and Tuples: 05_Lists_and_Tuples.md
+      - 06 Dictionaries: 06_Dictionaries.md
+      - 07 Sets: 07_Sets.md
+      - 08 Itertools Module: 08_itertools_Module.md
+      - 09 Comprehensions: 09_Comprehensions.md
+      - 10 Manipulating Strings: 10_Manipulating_Strings.md
+      - 11 String Formatting: 11_String_Formatting.md
+      - 12 Regular Expressions: 12_Regular_Expressions.md
+      - 13 File and Directory Paths: 13_File_and_Directory_Paths.md
+      - 14 Reading and Writing Files: 14_Reading_and_Writing_Files.md
+      - 15 JSON YAML: 15_JSON_YAML.md
+      - 16 Debugging: 16_Debugging.md
+      - 17 Lambda and Ternary Conditionals Operators: 17_Lambda_and_Ternary_Conditionals_Operators.md
+      - 18 args and kwargs: 18_args_and_kwargs.md
+      - 19 Context Manager: 19_Context_Manager.md
+      - 20 main Top level Script Environment: 20_main__Top_level_Script_Environment.md
+      - 21 setup.py: 21_setup.py.md
+      - 22 Dataclasses: 22_Dataclasses.md
+
+    - Python cheat sheet pdf:
+      - Basics cheat sheet python: cheatsheet_pdf/1_pcc_cheat_sheet_python.pdf
+      - Lists cheat sheet python: cheatsheet_pdf/2_lists_cheat_sheet_python.pdf
+      - Dictionaries cheat sheet python: cheatsheet_pdf/3_dictionaries_cheat_sheet_python.pdf
+      - If while cheat sheet python: cheatsheet_pdf/4_if_while_cheat_sheet_python.pdf
+      - Functions cheat sheet python: cheatsheet_pdf/5_functions_cheat_sheet_python.pdf
+      - Classes cheat sheet python: cheatsheet_pdf/6_classes_cheat_sheet_python.pdf
+      - Files exceptions cheat sheet python: cheatsheet_pdf/7_files_exceptions_cheat_sheet_python.pdf
+      - Testing cheat sheet python: cheatsheet_pdf/8_testing_cheat_sheet_python.pdf
+      - Pygame cheat sheet python: cheatsheet_pdf/9_pygame_cheat_sheet_python.pdf
+      - Matplotlib cheat sheet python: cheatsheet_pdf/10_matplotlib_cheat_sheet_python.pdf
+      - Pygal cheat sheet python: cheatsheet_pdf/11_pygal_cheat_sheet_python.pdf
+      - Django cheat sheet python: cheatsheet_pdf/12_django_cheat_sheet_python.pdf
+      - All cheat sheet python: cheatsheet_pdf/all_cheat_sheet_python.pdf
+      - Python For DataScience cheat sheet: cheatsheet_pdf/00_Python_For_DataScience_cheat_sheet.pdf
+
+dev_addr: '0.0.0.0:8001'
+
+theme:
+  name: material
+        # ivory
+
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.magiclink
+  - pymdownx.tilde
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'

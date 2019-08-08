@@ -1,0 +1,319 @@
+site_name: Deep Learning Course
+nav:
+    - Home: notation_deep_learning.md
+    - News about papers and AI:
+      - paperswithcode.com: https://paperswithcode.com/sota
+
+    - Notation deep learning: notation_deep_learning.md
+
+    - Summaries:
+      - MIT deep learning 6.S191: http://introtodeeplearning.com/
+      - Google developers course: https://developers.google.com/machine-learning/crash-course/ml-intro
+      - Deep Learning Book (Ian Goodfellow and Yoshua Bengio and Aaron Courville): https://www.deeplearningbook.org/
+      - Reminder Machine Learning: super-cheatsheet-machine-learning.pdf
+      - Deep Learning mind map: https://github.com/dformoso/deeplearning-mindmap/blob/master/Deep%20Learning.pdf
+      - Gradient descent: https://www.youtube.com/watch?v=sDv4f4s2SB8
+      - Deep Learning Cheat Sheet:
+        - Cheat Sheet in English: https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/en 
+        - Cheat Sheet in French: https://github.com/afshinea/stanford-cs-230-deep-learning/tree/master/fr
+        - Architectures cheat sheet: architectures_cheat_sheet.md
+      - data-science-ipython-notebooks list: https://github.com/donnemartin/data-science-ipython-notebooks
+
+    - Other courses:
+      - Deep Learning (Deep Neural Networks): https://github.com/kmario23/deep-learning-drizzle#tada-deep-learning-deep-neural-networks-confetti_ball-balloon
+      - Probabilistic Graphical Models: https://github.com/kmario23/deep-learning-drizzle#loudspeaker-probabilistic-graphical-models---foundation-for-graph-neural-networks-sparkles
+      - Machine Learning Fundamentals: https://github.com/kmario23/deep-learning-drizzle#cupid-machine-learning-fundamentals-cyclone-boom)
+      - Natural Language Processing: https://github.com/kmario23/deep-learning-drizzle#hibiscus-natural-language-processing---more-applied-cherry_blossom-sparkling_heart
+      - Optimization for Machine Learning: https://github.com/kmario23/deep-learning-drizzle#cupid-optimization-for-machine-learning-cyclone-boom)
+      - Automatic Speech Recognition: https://github.com/kmario23/deep-learning-drizzle#speaking_head-automatic-speech-recognition-speech_balloon-thought_balloon)
+      - General Machine Learning: https://github.com/kmario23/deep-learning-drizzle#cupid-general-machine-learning-cyclone-boom
+      - Modern Computer Vision: https://github.com/kmario23/deep-learning-drizzle#fire-modern-computer-vision-camera_flash-movie_camera
+      - Reinforcement Learning: https://github.com/kmario23/deep-learning-drizzle#balloon-reinforcement-learning-hotsprings-video_game
+      - Boot Camps or Summer Schools: https://github.com/kmario23/deep-learning-drizzle#star2-boot-camps-or-summer-schools-maple_leaf
+      - Bayesian Deep Learning: https://github.com/kmario23/deep-learning-drizzle#game_die-bayesian-deep-learning-spades-gem
+      - Medical Imaging: https://github.com/kmario23/deep-learning-drizzle#movie_camera-medical-imaging-camera-video_camera
+      - Graph Neural Networks: https://github.com/kmario23/deep-learning-drizzle#tada-graph-neural-networks-geometric-dl-confetti_ball-balloon
+      - Bird's-eye view of Artificial Intelligence: https://github.com/kmario23/deep-learning-drizzle#bird-birds-eye-view-of-agi-eagle
+
+    - Maths:
+      - Tensorflow Probability: https://github.com/tensorflow/probability
+      - Glossary_of_calculus: https://en.wikipedia.org/wiki/Glossary_of_calculus
+      - Glossary_of_probability_and_statistics: https://en.wikipedia.org/wiki/Glossary_of_probability_and_statistics
+      - Statistics: http://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf
+      - Probability: https://static1.squarespace.com/static/54bf3241e4b0f0d81bf7ff36/t/55e9494fe4b011aed10e48e5/1441352015658/probability_cheatsheet.pdf
+      - Calculus: http://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_All.pdf
+      - Linear Algebra: https://www.souravsengupta.com/cds2016/lectures/Savov_Notes.pdf
+      - Number Theory: https://www.docdroid.net/rAbDvxF/number-theory-cheatsheet.pdf
+      - Geometry: http://mdk12.msde.maryland.gov/instruction/curriculum/hsa/geometry/math_reference_sheet.html
+      - Logic: http://www.pitt.edu/~woon/courses/ps2703_logic.pdf
+      - Combinatorics: http://www.baskent.edu.tr/~tkaracay/etudio/ders/math/GenelMath/Combinatorics.pdf 
+      - Differential Equations: http://furius.ca/cqfpub/doc/diffequs/diffequs.pdf
+      - Information theory: information_theory.md
+
+    - M1 Neural Networks and Deep Learning:
+      - Coursera AI Summary:
+        - Neural Networks Basics Summarized (Linear regression, Logistic regression, Loss function, Cost function, Gradient descent, Forward and Back propagation): neural_networks_basics_summarized.md
+        - Shallow Neural Networks Summarized: shallow_neural_networks_summarized.md
+        - Gradient descent visualization: gradient_descent_visualization.md
+        - Example numpy_neural_net.zip: numpy_neural_net.zip
+        - Best Video Gradient descent + lost function + cost function: https://youtu.be/IHZwWFHWa-w?t=513
+      - Introduction to deep learning: introduction_to_deep_learning.md
+      - Neural Networks Basics: neural_networks_basics.md
+      - Shallow Neural Networks: shallow_neural_networks.md
+      - Shallow Neural Networks summary with algo: shallow_neural_networks_summary_with_algo.md
+      - Deep Neural Networks: deep_neural_networks.md
+
+
+    - M2 Improving Deep Neural Networks: 
+      - Practical aspects of Deep Learning:
+        - Setting up your Machine Learning Application: setting_up_your_machine_learning_application.md
+        - Regularizing your neural network: regularizing_your_neural_network.md
+        - Setting up your optimization problem: setting_up_your_optimization_problem.md
+
+      - Optimization algorithms (speed-up gradient descent):
+        - Understanding mini-batch gradient descent: understanding_mini-batch_gradient_descent.md
+        - Exponentially weighted average: exponentially_weighted_average.md
+        - Gradient descent with momentum: gradient_descent_with_momentum.md
+        - RMSprop root mean square prop: rmsprop_root_mean_square_prop.md
+        - Adam optimization algorithm: adam_optimization_algorithm.md
+        - Learning rate decay: learning_rate_decay.md
+        - The problem of local optima: the_problem_of_local_optima.md
+
+      - Hyperparameter tuning, Batch Normalization and Programming Frameworks:
+        - Hyperparameter tuning:
+          - Tunning process: tunning_process.md
+          - Using an appropriate scale to pick hyperparameters: using_an_appropriate_scale_to_pick_hyperparameters.md
+          - Hyperparameters tuning in practice Pandas vs Caviar: hyperparameters_tuning_in_practice_pandas_vs_caviar.md
+        - Batch normalization:
+          - Normalizing activations in a network: normalizing_activations_in_a_network.md
+          - Fitting Batch Norm into a neural network: fitting_batch_norm_into_a_neural_network.md
+          - Why does Batch Norm work: why_does_batch_norm_work.md
+          - Batch Norm at test time: batch_norm_at_test_time.md
+        - Multi-class classification:
+          - Softmax regression: softmax_regression.md
+          - Training a softmax classifier: training_a_softmax_classifier.md
+        - Introduction to programming frameworks:
+          - Deep learning frameworks: deep_learning_frameworks.md
+          - Tensorflow: tensorflow.md
+  
+    - M3 Structuring Machine Learning Projects:
+      - Introduction to ML Strategy:
+        - Why ML Strategy: why_ml_strategy.md
+        - Orthogonalization: orthogonalization.md
+      
+      - Setting up your goal:
+        - Single number evaluation metric (harmonic mean, average): single_number_evaluation_metric.md
+        - Satisficing and Optimizing metric: satisficing_and_optimizing_metric.md
+        - Train_dev_test distributions: train_dev_test_distributions.md
+        - Size of the dev and test sets: size_of_the_dev_and_test_sets.md
+        - When to change dev_test sets and metrics: when_to_change_dev_test_sets_and_metrics.md
+      
+      - Comparing to human-level performance:
+        - Why human-level performance: why_human-level_performance.md
+        - Avoidable bias: avoidable_bias.md
+        - Understanding human-level performance: understanding_human-level_performance.md
+        - Surpassing human-level performance: surpassing_human-level_performance.md
+        - Improving your model performance: improving_your_model_performance.md
+      
+      - Error Analysis:
+        - Carrying out error analysis: carrying_out_error_analysis.md
+        - Cleaning up incorrectly labeled data: cleaning_up_incorrectly_labeled_data.md
+        - Build your first system quickly then iterate: build_your_first_system_quickly_then_iterate.md
+      
+      - Mismatched training and dev/test set:
+        - Training and testing on different distributions: training_and_testing_on_different_distributions.md
+        - Bias and Variance with mismatched data distributions: bias_and_variance_with_mismatched_data_distributions.md
+        - Addressing data mismatch: addressing_data_mismatch.md
+      
+      - Learning from multiple tasks:
+        - Transfer learning: transfer_learning.md
+        - Multi-task learning: multi-task_learning.md
+      
+      - End-to-end deep learning:
+        - What is end-to-end deep learning: what_is_end-to-end_deep_learning.md
+        - Whether to use end-to-end deep learning: whether_to_use_end-to-end_deep_learning.md
+
+    - M4 Convolutional Neural Networks:
+      - Foundations of Convolutional Neural Networks:
+        - Computer Vision: computer_vision.md
+        - Edge Detection Example: edge_detection_example.md
+        - More edge detection: more_edge_detection.md
+        - Padding: padding.md
+        - Strided convolution: strided_convolution.md
+        - Convolutions Over Volume: convolutions_over_volume.md
+        - One layer of Convolutional Network: one_layer_of_convolutional_network.md
+        - Convolutional layer by Stanford (CS231n course): convolutional_layer_by_stanford.md
+        - Simple Convolutional Network Example: simple_convolutional_network_example.md
+        - Pooling layers: pooling_layers.md
+        - Convolutional Network Example (more complex): convolutional_network_example.md
+        - Why Convolutions: why_convolutions.md
+
+      - Deep convolutional models (case studies):
+        - Why look at case studies: why_look_at_case_studies.md
+        - Classic Networks (LeNet-5, AlexNet): classic_networks.md
+        - Residual Networks (ResNets): residual_networks_resnets.md
+        - Why ResNets work: why_resnets_work.md
+        - Networks in Networks and 1x1 Convolutions: networks_in_networks_and_1x1_convolutions.md
+        - Inception Network Motivation: inception_network_motivation.md
+        - Inception Network: inception_network.md
+
+      - Practical advices for using ConvNets:
+        - Using Open-Source Implementation: using_open-source_implementation.md
+        - Transfer Learning ConvNets: transfer_learning_convnets.md
+        - Data Augmentation: data_augmentation.md
+
+      - Detection algorithms:
+        - Object localization: object_localization.md
+        - Landmark detection: landmark_detection.md
+        - Object Detection: object_detection.md
+        - Convolutional Implementation of Sliding Windows: convolutional_implementation_of_sliding_windows.md
+        - Bounding Box Predictions, YOLO explanations beginning: bounding_box_predictions.md
+        - Julien Reading the Yolo Paper: julien_reading_the_yolo_paper.md
+        - Intersection Over Union: intersection_over_union.md
+        - Non-max Suppression: non-max_suppression.md
+        - Anchor Boxes: anchor_boxes.md
+        - YOLO Algorithm: yolo_algorithm.md
+        - Region Proposals (R-CNN) (optional): region_proposals_r_cnn.md
+
+      - Face Recognition special case:
+        - What is face recognition: what_is_face_recognition.md
+        - One Shot Learning: one_shot_learning.md
+        - Siamese Network: siamese_network.md
+        - Triplet Loss: triplet_loss.md
+        - Face Verification and Binary Classification: face_verification_and_binary_classification.md
+      - Neural Style Transfer special case:
+        - What is neural style transfer: what_is_neural_style_transfer.md
+        - What are deep ConvNets learning: what_are_deep_convnets_learning.md
+        - Neural Style Transfer cost function SIMPLE definition: neural_style_transfer_cost_function_simple_definition.md
+        - Content Cost Function: content_cost_function.md
+        - Style Cost Function: style_cost_function.md
+        - Neural Style Transfer cost function FINAL definition: neural_style_transfer_cost_function_final_definition.md
+        - 1D and 3D Generalizations: 1d_and_3d_generalizations.md
+
+      - All CNN Architectures: cs231n_2017_lecture9.pdf
+
+    - M5 Sequence Models:
+      - Recurrent Neural Networks:
+        - Why sequence models: why_sequence_models.md
+        - Notation Recurrent Neural Networks: notation_recurrent_neural_networks.md
+        - Recurrent Neural Network Model: recurrent_neural_network_model.md
+        - Backpropagation through time: backpropagation_through_time.md
+        - Different types of RNNs: different_types_of_rnns.md
+        - Language model and sequence generation: language_model_and_sequence_generation.md
+        - Sampling novel sequences: sampling_novel_sequences.md
+        - Vanishing gradients with RNNs: vanishing_gradients_with_rnns.md
+        - Gated Recurrent Unit (GRU): gated_recurrent_unit_GRU.md
+        - Long Short Term Memory (LSTM): long_short_term_memory_LSTM.md
+        - Bidirectional RNN: bidirectional_RNN.md
+        - Deep RNNs: deep_rnns.md
+
+      - Natural Language Processing & Word Embeddings: 
+        - Chatbots datasets: https://lionbridge.ai/datasets/15-best-chatbot-datasets-for-machine-learning/
+        - Introduction to Word Embeddings:
+          - Word Representation: word_representation.md
+          - Using word embeddings: using_word_embeddings.md
+          - Properties of word embeddings: properties_of_word_embeddings.md
+          - Embedding matrix: embedding_matrix.md
+        - Learning Word Embeddings with Word2vec & GloVe:
+          - Learning Word Embeddings: learning_word_embeddings.md
+          - Word2Vec: word2vec.md
+          - Negative Sampling: negative_sampling.md
+          - GloVe word vectors: glove_word_vectors.md
+        - Applications using Word Embeddings:
+          - Sentiment Classification: sentiment_classification.md
+          - Debiasing word embeddings: debiasing_word_embeddings.md
+        - CSS224N Natural Language Processing: cs224n.md
+        - CSS224U Natural Language Understanding: cs224n.md
+        - NLP summary: nlp_summary.md
+
+
+      - Sequence models and Attention mechanism:
+          - Various sequence to sequence architectures:
+            - Basic Models: basic_models.md
+            - Picking the most likely sentence: picking_most_likely_sentence.md
+            - Beam Search: beam_search.md
+            - Refinements to Beam Search: refinements_to_beam_search.md
+            - Error analysis in beam search: error_analysis_in_beam_search.md
+            - Bleu Score (optional): blue_score.md
+            - Attention Model Intuition: attention_model_intuition.md
+            - Attention Model: attention_model.md
+          - Speech recognition - Audio data:
+            - Speech recognition: speech_recognition.md
+            - Trigger Word Detection: trigger_word_detection.md
+
+    - M6 Generative Models:
+      - Stanford cs231n 2017 lecture13 | Generative Models: cs231n_2017_lecture13.pdf
+      - Stanford cs231n 2017 lecture16 | Adversarial Examples and Adversarial Training: https://www.youtube.com/watch?v=CIfsB_EYsVI
+      - Ian GoodFellow Gans: https://www.youtube.com/watch?v=CIfsB_EYsVI&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=16
+      - Gan tutorial: https://www.oreilly.com/learning/generative-adversarial-networks-for-beginners
+      - BigGAN tensorflow tutorial: https://www.tensorflow.org/beta/tutorials/generative/dcgan
+      - MIT 6.S191 Deep Generative Models: http://introtodeeplearning.com/
+      - Gan open problems: https://distill.pub/2019/gan-open-problems/
+
+    - M7 Reinforcement learning:
+      - Reinforcement learning explained: https://www.edx.org/course/reinforcement-learning-explained-5
+      - Reinforcement learning bible (img/RLbook2018.pdf): http://incompleteideas.net/book/the-book.html
+
+    - M8 Graph neural networks:
+      - Graphs representation: graphs.md
+      - Sparse matrices: deep_learning_programmation_hints.md
+      - Deep Learning on Graphs, A Survey (State of the art paper): https://arxiv.org/pdf/1812.04202.pdf
+      - GCN invented by THOMAS KIPF:
+        - GCN_my_explaination: gcn_my_explaination.md
+        - Explaination: https://tkipf.github.io/graph-convolutional-networks/
+        - Graphs libraries:
+          - Saurabh Verma's Keras: https://vermamachinelearning.github.io/keras-deep-graph-learning/
+          - Deep Graph Library (PyTorch for now): https://github.com/dmlc/dgl
+          - Graph Nets library (not deep learning): https://github.com/deepmind/graph_nets
+
+    - Deep Learning Programmation Hints: 
+      - Tensorflow: tensorflow.md
+      - Python Numpy Programmation hints: deep_learning_programmation_hints.md
+
+    - Glossary deep learning: glossary_deep_learning.md
+
+    - Tools:
+      - DatasetSearch:
+        - google datasearch: https://toolbox.google.com/datasetsearch
+        - kdnuggets: https://dev.kdnuggets.com/datasets/index.html
+        - awesome-public-datasets: https://github.com/awesomedata/awesome-public-datasets
+        - Tensorflow datasets: https://www.tensorflow.org/datasets/datasets
+      - Website:
+        - Wix: https://www.wix.com/
+        - Bluehost: https://www.bluehost.com
+      - Free Project Management Software: 
+        - Asana: https://asana.com/
+        - Wrike: https://www.wrike.com
+        - Trello: https://trello.com/
+      - Business: 
+        - jobs:
+          - upwork: https://www.upwork.com/
+          - freelancer: https://www.freelancer.com
+          - Elite toptal: https://www.toptal.com/
+        - Networking: 
+          - kdnuggets: https://dev.kdnuggets.com/datasets/index.html
+          - oreilly Strata: https://conferences.oreilly.com/artificial-intelligence/ai-ca
+          - Meetup: https://www.meetup.com/
+
+      - Leading site on Business Analytics and Data Science: https://dev.kdnuggets.com/
+      - Trace graphs:
+        - Tracing and derivatives with wolframlpha: https://www.wolframalpha.com/
+        - Image to latex converter: https://github.com/yixuanzhou/image2latex
+        - 2D Graphing Tool: https://www.desmos.com/calculator
+        - 3D Graphing Tool: https://www.geogebra.org/3d
+
+theme:
+  name: material
+        # ivory
+
+markdown_extensions:
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.magiclink
+  - pymdownx.tilde
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'

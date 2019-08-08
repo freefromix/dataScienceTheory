@@ -1,0 +1,164 @@
+# Information theory
+
+## Reminder
+
+| Notation          | Definition                                                             |
+| ----------------- | ---------------------------------------------------------------------- |
+| $\forall x \in X$ | For all x in X                                                         |
+| $P(A,B)$          | Is the probability that both A and B happen                            |
+| $P(A \vert B)$    | Is the probability that A happens, knowing that B has already happened |
+
+## Communication over an unreliable channel
+
+Channel examples:
+
+- voice to ear (medium air)
+- eye to brain
+- DNA to DNA
+- Antenna to Mars rover (vacuum)
+- phone to phone (wire)
+- file to file (magnetized disk drive)
+
+$ReceivedSignal \approx TransmittedSignal + Noise$
+
+We would like:
+
+$ReceivedSignal = TransmittedSignal$
+
+Solutions:
+- Physical solutions (better wire, stronger signal)
+- System solutions (we accept the lousy channel as it is and we add encoding and decoding systems that transform it in a reliable system)
+
+![infor theory](img/inform_theory_encoder_decoder.png)
+
+### Binary Symetric Channel
+
+Let's say we use a new disk drive.
+
+![binary_symetric_channel](img/binary_symetric_channel.png)
+
+![binary_symetric_channel2](img/binary_symetric_channel2.png)
+
+- Input is a 0 or a 1 that we send
+- Output is a 0 or a 1
+
+| The probability that what comes out: |                        |
+| ------------------------------------ | ---------------------- |
+| Is what we put in is: $1-f$          | $P(y=0 \vert x=0)=1-f$ |
+| Is NOT what we put in is: $f$        | $P(y=1 \vert x=0)=f$   |
+
+**QUESTION 1:** A file of 10 000 bits is stored on this drive and then it is read. Whe have $f=0.1$
+
+Roughly how many bits are flipped?
+
+ANSWER:
+
+The probability that what comes out:
+
+- Is NOT what we put in is $n \times f=10000*0.1=1000$
+
+To be more precise we can say: $n \times f + standard deviation$
+
+If X has a binomial distribution with $n$ trials and probability of success $p$ on each trial, then:
+
+| BINOMIAL DISTRIBUTION   | Formula                 |
+| ----------------------- | ----------------------- |
+| Mean of X               | $\mu=np$                |
+| Variance of X           | $\theta^2=np(1-p)$      |
+| Standard deviation of X | $\theta=\sqrt{np(1-p)}$ |
+
+Here we have $p = f = 0.1$ so:
+
+- Variance of X: $\theta^2 = 10000*0.1*(1-0.1)=900$
+- Standard deviation of X: $\theta = \sqrt{\theta^2}=\sqrt{900}=30$
+
+So $1000 \pm 30$ bits are flipped.
+
+**QUESTION 2:** For a saleable 1 Gigabyte disk drive how small does the flip probability needs to be?
+
+ANSWER:
+
+We imagine that the user use the disk drive:
+
+- Every single day
+- During five years.
+- At a rate of 1 Gigabyte per day.
+
+$\#bits = 5\ years \times 1 Gigabyte\ Per\ Day = 5\ years \times (8 \times 10^9 bits)$
+$\#bits = 5 * 365 * 8 * 10^9 = 10^{13}$
+
+If we want a 1% chance of disappointment:
+
+$f = \#bits * 1\% = 10^{15}$
+
+And if you want all your 1000 first customers to be happy then we need to aim for $f = 10^{18}$.
+
+But now let's accept $f=10^{15}$ or better as the reasonable answer.
+
+**QUESTION 3:** ENCODERS How do we add redundancy to the file?
+
+Let's say we repeat it: $R_3$
+
+| S   | t   |
+| --- | --- |
+| 0   | 000 |
+| 1   | 111 |
+
+![r3](img/r3.png)
+
+Imagine:
+
+S = 0 1 1 0 1
+
+Then:
+
+t = 000 111 111 000 111
+
+Let's add some noise:
+
+n = 000 100 000 101 000
+
+We then receive (addition modulo 2, XOR operation):
+
+r = 000 011 111 101 111
+
+If the decoder apply the majority rule we doesn't have the original message:
+
+$\hat{S}$ = 0 1 1 1 0
+
+The third bit should be 0 so it doesn't really works.
+
+### Probability method
+
+#### Inference
+
+Inverse probability
+
+| Definition     | Rule name                  | Math rule definition                                                                         |
+| -------------- | -------------------------- | -------------------------------------------------------------------------------------------- |
+| $P(s,r)$       | Product rule               | $P(s,r)=P(r \vert s)P(s)$ or $P(s,r)=P(s \vert r)P(r)$                                       |
+| $P(r)$         | Sum rule                   | $P(r)=\sum_s P(s,r)=P(s=0,r)+P(s=1,r)$ or $P(r) = P(r \vert s=0)P(s=0)+P(r \vert s=1)P(s=1)$ |
+| $P(s \vert r)$ | Posterior probability of s | $P(s \vert r)=\frac{P(r \vert s)P(s)}{P(r)}$                                                 |
+
+For example if you receive $r = 011$:
+
+We use: $P(s \vert r)=\frac{P(r \vert s)P(s)}{P(r)}$
+
+- The likelihood of s is: $P(r \vert s)$
+- The prior probability of s is: $P(r)$
+
+- $r = 011$
+
+| The probability that what comes out: |                                     |
+| ------------------------------------ | ----------------------------------- |
+| Is what we put in is: $1-f$          | $P(r \vert s=0)=(1-f)*f*f=(1-f)f^2$ |
+| Is NOT what we put in is: $f$        | $P(r \vert s=1)=f^1*(1-f)*(1-f)$    |
+
+If:
+
+- $P(s=0)=\frac{1}{2}$
+- $P(s=1)=\frac{1}{2}$
+
+Then:
+
+$P(s=1 \vert r=011)=\frac{(1-f)^2*f\frac{1}{2}}{(1-f)f^2*\frac{1}{2}+f(1-f)^2\frac{1}{2}}$

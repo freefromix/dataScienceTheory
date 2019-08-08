@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Number <= 6.5\ngini = 0.27\nsamples = 37\nvalue = [47, 9]\nclass = K", fillcolor="#e58139ce"] ;
+1 [label="Age <= 44.5\ngini = 0.2\nsamples = 34\nvalue = [46, 6]\nclass = K", fillcolor="#e58139de"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 15\nvalue = [24, 0]\nclass = K", fillcolor="#e58139ff"] ;
+1 -> 2 ;
+3 [label="Age <= 109.0\ngini = 0.34\nsamples = 19\nvalue = [22, 6]\nclass = K", fillcolor="#e58139b9"] ;
+1 -> 3 ;
+4 [label="Start <= 14.0\ngini = 0.49\nsamples = 5\nvalue = [3, 4]\nclass = y", fillcolor="#399de540"] ;
+3 -> 4 ;
+5 [label="Number <= 4.0\ngini = 0.32\nsamples = 4\nvalue = [1, 4]\nclass = y", fillcolor="#399de5bf"] ;
+4 -> 5 ;
+6 [label="Start <= 8.5\ngini = 0.44\nsamples = 2\nvalue = [1, 2]\nclass = y", fillcolor="#399de57f"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = K", fillcolor="#e58139ff"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [0, 2]\nclass = y", fillcolor="#399de5ff"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = y", fillcolor="#399de5ff"] ;
+5 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [2, 0]\nclass = K", fillcolor="#e58139ff"] ;
+4 -> 10 ;
+11 [label="Start <= 7.5\ngini = 0.17\nsamples = 14\nvalue = [19, 2]\nclass = K", fillcolor="#e58139e4"] ;
+3 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [0, 2]\nclass = y", fillcolor="#399de5ff"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 13\nvalue = [19, 0]\nclass = K", fillcolor="#e58139ff"] ;
+11 -> 13 ;
+14 [label="Age <= 82.5\ngini = 0.38\nsamples = 3\nvalue = [1, 3]\nclass = y", fillcolor="#399de5aa"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+15 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = K", fillcolor="#e58139ff"] ;
+14 -> 15 ;
+16 [label="gini = 0.0\nsamples = 2\nvalue = [0, 3]\nclass = y", fillcolor="#399de5ff"] ;
+14 -> 16 ;
+}
